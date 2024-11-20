@@ -45,7 +45,7 @@
         <div class="info-content">
           <h1 class="name" title="Ajay vardhan">Ajay Vardhan</h1>
 
-          <p class="title">Cybersecurity Engineer</p>
+          <p class="title">Cybersecurity Engineer/Offensive security</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn="">
@@ -188,8 +188,10 @@
 
         <section class="about-text">
           <p>
-            Hi, I'm Narahari Raghava, a cybersecurity engineer dedicated to solving complex problems and ensuring digital security.
-            My journey in the field of cybersecurity has been fueled by a love for technology and a relentless drive to stay ahead of emerging threats. I specialize in cloud security, focusing on protecting cloud-based environments with advanced tools and practices. I believe in proactive security measures and continuous learning. Staying updated with the latest technologies and threat landscapes is crucial. My approach is not just about addressing current issues but anticipating future challenges.
+            Hi, I'm Ajay Vardhan, a security researcher cybersecurity engineer focus on offensive security dedicated to solving complex problems and ensuring digital security. 
+            My journey in the field of cybersecurity has been fueled by a love for technology and stay ahead of emerging threats. I specialize in Application security, Security Research field's with advanced tools and practices. 
+            I believe in proactive security measures and continuous learning, Staying updated with the latest technologies and threat landscapes is crucial in this this Research field.
+
           </p>
 
           <p style="
@@ -205,193 +207,12 @@
 
           <p> This quote drives my commitment to add real value through my work.</p>
           <p>
-            Beyond my professional life, I am an avid sports enthusiast. Football holds a special place in my heart, and I am a die-hard Real Madrid fan. In the fast-paced world of Formula 1, I cheer for Red Bull Racing. The blend of speed, strategy, and cutting-edge technology in F1 fascinates me. When I'm not immersed in cybersecurity or watching sports, I enjoy engaging in outdoor activities, playing sports and exploring new places. I also have a keen interest in tech gadgets and enjoy exploring the latest innovations.</p>
           <p></p>
 
-          <p>I am always open to connecting with fellow professionals, sports enthusiasts, and anyone interested in cybersecurity and cloud. Feel free to reach out to me for discussions, or just a friendly chat about the latest in football and F1.</p>
         </section>
-
-<!--------------- Interactive ICONS -------------------------->
-
-        <section id="interactive-icons" style="padding: 20px; text-align: center; overflow: hidden;">
-          <div class="icon-container">
-            <!-- Shield Icon -->
-            <div class="icon-box" onclick="animateShield()">
-              <i class="fas fa-shield-alt shield-icon"></i>
-            </div>
-            <!-- Virus Icon -->
-            <div class="icon-box" onclick="animateVirus()">
-              <i class="fas fa-virus virus-icon"></i>
-            </div>
-            <!-- Lock Icon -->
-            <div class="icon-box" onclick="animateLock()">
-              <i class="fas fa-lock lock-icon"></i>
-            </div>
-          </div>
-
-          <!-- Font Awesome CDN -->
-          <link rel="stylesheet" href="css/all.min.css">
-          <style>
-            /* Reset styles to avoid extra spacing and box around icons */
-            #interactive-icons {
-              overflow: hidden;
-              padding: 0; /* Remove padding */
-              margin: 0; /* Remove margin */
-            }
-
-            .icon-container {
-              display: flex;
-              justify-content: center;
-              gap: 25px; /* Increased space between icons horizontally */
-              flex-wrap: wrap;
-              margin: 0 auto; /* Center the icons */
-            }
-
-            .icon-box {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              background: transparent; /* Ensure no background color */
-              border: none; /* Remove any border */
-              padding: 0; /* Remove padding */
-              margin: 0; /* Remove margin */
-              box-shadow: none; /* Ensure no box shadow */
-            }
-
-            .icon-box:hover {
-              transform: scale(1.2); /* Slightly increased size on hover */
-            }
-
-            .icon-box:active {
-              transform: scale(1.1); /* Slightly smaller on click */
-            }
-
-            .shield-icon, .virus-icon, .lock-icon {
-              font-size: 2em; /* Increased icon size */
-              transition: all 0.3s ease-in-out; /* Smooth transition */
-              color: inherit; /* Ensure the icon color blends with the background */
-            }
-
-            .shield-icon {
-              color: #007bff; /* Blue color */
-            }
-
-            .virus-icon {
-              color: #dc3545; /* Red color */
-            }
-
-            .lock-icon {
-              color: #ffc107; /* Yellow color */
-            }
-
-            @keyframes shieldEffect {
-              0% {
-                text-shadow: none;
-                color: #007bff;
-              }
-              50% {
-                text-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff; /* Adjusted shine effect */
-              }
-              100% {
-                text-shadow: none;
-                color: #007bff;
-              }
-            }
-
-            @keyframes virusEffect {
-              0% {
-                color: #dc3545; /* Red color */
-              }
-              50% {
-                color: #28a745; /* Green color */
-              }
-              100% {
-                color: #dc3545; /* Red color */
-              }
-            }
-
-            @keyframes lockZoomIn {
-              0% {
-                transform: scale(1);
-              }
-              50% {
-                transform: scale(1.3); /* Slightly increased scale */
-              }
-              100% {
-                transform: scale(1);
-              }
-            }
-
-            @keyframes lockZoomOut {
-              0% {
-                transform: scale(1.3); /* Slightly increased scale */
-              }
-              50% {
-                transform: scale(1);
-              }
-              100% {
-                transform: scale(1);
-              }
-            }
-
-            .lock-icon.open {
-              animation: lockZoomIn 1s forwards;
-            }
-
-            .lock-icon.closed {
-              animation: lockZoomOut 1s forwards;
-            }
-
-            .animate-virus {
-              animation: virusEffect 1s forwards;
-            }
-
-            .shield-effect {
-              animation: shieldEffect 2s forwards;
-            }
-          </style>
-          <script>
-            let lockOpen = false;
-            let virusAnimating = false;
-
-            function animateShield() {
-              const shield = document.querySelector('.shield-icon');
-              shield.style.animation = "none"; // Reset animation
-              shield.offsetHeight; // Trigger reflow
-              shield.style.animation = "shieldEffect 2s forwards"; // Reapply animation
-            }
-
-            function animateVirus() {
-              const virus = document.querySelector('.virus-icon');
-              virus.classList.remove('animate-virus'); // Reset animation
-              void virus.offsetWidth; // Trigger reflow
-              virus.classList.add('animate-virus'); // Start animation
-            }
-
-            function animateLock() {
-              const lock = document.querySelector('.lock-icon');
-              if (lockOpen) {
-                lock.classList.remove('open');
-                lock.classList.add('closed');
-              } else {
-                lock.classList.remove('closed');
-                lock.classList.add('open');
-              }
-              lockOpen = !lockOpen; // Toggle state
-            }
-          </script>
-        </section>
-
-
-
 
 
       </article>
-
-
-
-
 
       <!--
         - #RESUME
@@ -922,7 +743,7 @@
                   <ion-icon name="terminal-outline"></ion-icon>
                 </div>
 
-                <h1 class="h1" style="color: white;">Python, C, C++, HTML, CSS</h1>
+                <h1 class="h1" style="color: white;">Python, Js, PHP, HTML, CSS</h1>
               </div>
 
               <div class="title-wrapper">
@@ -938,7 +759,7 @@
                   <ion-icon name="infinite-outline"></ion-icon>
                 </div>
 
-                <h1 class="h1" style="color: white;">Git, Terraform, Docker, SAST</h1>
+                <h1 class="h1" style="color: white;">Git, Docker, SAST, DAST</h1>
               </div>
 
               <div class="title-wrapper">
@@ -954,7 +775,7 @@
                   <ion-icon name="server-outline"></ion-icon>
                 </div>
 
-                <h1 class="h1" style="color: white;">MySQL, AWS RDS, DynamoDB</h1>
+                <h1 class="h1" style="color: white;">MySQL, AWS </h1>
               </div>
               <!--              <div class="title-wrapper">-->
               <!--                <h5 class="h5">Web design</h5>-->
